@@ -39,7 +39,7 @@ function menu(){
             }
             default:{
                 //usuario no eligio una opcion valida
-                console.log("Error");
+                console.log("Error. Elija una opcion validad");
                 break;
             }
         }
@@ -88,7 +88,7 @@ function registrarse(){
 
 function mostrarPublicaciones(){
     //muestra publicaciones hasta 10
-    for (let i=1;i<10; i++ ){
+    for (let i=1;i<=10; i++ ){
         console.log("Publicación " + i);
     }
 }
