@@ -1,4 +1,7 @@
-
+const usuarios=[{nombreUsuario: "juan", contraseñas: "1234"},
+                {nombreUsuario: "maria", contraseñas: "1234"},
+                {nombreUsuario:"lucas", contraseñas:"1234"}];
+const publicaciones=[];
 
 function menu(){
     //simulación de un menu donde se pueda iniciar y registrar 
@@ -10,7 +13,7 @@ function menu(){
         console.log("Bienvenido!");
         console.log("---------------- Menú -----------------");
         console.log("1.Iniciar sesión");
-        console.log("2.Registrarsse");
+        console.log("2.Registrarse");
         let op=parseInt(prompt("Ingrese una opción"));
         switch (op){
             case 1:{
@@ -59,10 +62,17 @@ function iniciarSesion(){
         //si no ingresa nada retorna falso
         alert("Debe ingresar usuario y contraseña");
         return false;
-    }else{
+    }
+    let usuarioEncontrado = usuarios.find(user => user.nombreUsuario === usuario && user.contraseñas === contraseña);
+
+    if(usuarioEncontrado){
+        
         //inicio exitoso
         console.log("Bienvenido "+ usuario);
         return true;
+    }else{
+        console.log("usuario o contraseña incorrecta");
+        return false;
     }
 }
 
@@ -76,6 +86,7 @@ function registrarse(){
         //comprueba edad si cumple requisito retorna true, se ha registrado.
         console.log("Usuario registrado con exito");
         console.log("Bienvenido" + usuario);
+        usuarios.push({nombreUsuario: usuario,contraseñas: contraseña});
         return true;
     }else{
         //comprueba edad si no cumple requisito retorna false,no se ha registrado.
@@ -84,13 +95,43 @@ function registrarse(){
     }
 
 
+
 }
 
 function mostrarPublicaciones(){
     //muestra publicaciones hasta 10
-    for (let i=1;i<=10; i++ ){
-        console.log("Publicación " + i);
+    for (let i=0;i<=9; i++ ){
+        publicacion="Publicación " + (i+1);
+        publicaciones.push(publicacion);
     }
+     console.log("1.Mostrar todas las publicaciones.");
+     console.log("2.Mostrar publicaciones pares");
+     console.log("3.Mostrar publicaciones impares");
+     let op=parseInt(prompt("Ingrese una opción"));
+    switch(op){
+        case 1: {
+            publicaciones.forEach((publi)=>{
+                console.log(num);
+            })
+            break;
+        }   
+        case 2:{
+            const publicacionesPares= publicaciones.filter((el,index)=>(index+1)%2===0);
+            publicacionesPares.forEach((publi)=>{
+                console.log(publi);
+            })
+            break;
+        }case 3:{
+            const publicacionesImpares= publicaciones.filter((el, index)=>(index+1)%2!==0);
+            publicacionesImpares.forEach((publi)=>{
+                console.log(publi);
+            }) 
+            break;
+
+
+        }
+    }
+    
 }
 
 menu();
