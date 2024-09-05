@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(34, 34, 34);
+  color: white;
+}
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+header nav ul a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul a:hover {
+  color: #d9d9d9;
+}
+
+.container {
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .product_container {
+  width: 300px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #FFF;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container .product_container .product-img {
+  width: 100%;
+  height: 400px;
+  display: block;
+  object-fit: cover;
+}
+.container .product_container .content {
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */

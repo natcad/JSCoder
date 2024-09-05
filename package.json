@@ -1,0 +1,10 @@
+{
+  "name": "urbaner",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass styles/scss:styles/css --watch"
+  },
+  "dependencies": {
+    "sass": "^1.78.0"
+  }
+}
