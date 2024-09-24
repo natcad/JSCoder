@@ -1,0 +1,624 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Blazer Negro",
+      "categorias": "Abrigos",
+      "precio": 123456.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Blazer negro oversize",
+      "stock": 10,
+      "img": "../img/products/Blazer.webp"
+    },
+    {
+      "id": 2,
+      "nombre": "Buzo Negro",
+      "categorias": "Buzos",
+      "precio": 12456.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Buzo negro 100% algodon",
+      "stock": 10,
+      "img": "../img/products/Buzo.jpg"
+    },
+
+    {
+      "id": 3,
+      "nombre": "Buzo Rojo",
+      "categorias": "Buzos",
+      "precio": 12556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Buzo rojo 100% algodon",
+      "stock": 10,
+      "img": "../img/products/BuzoRojo.jpg"
+    },
+
+    {
+      "id": 4,
+      "nombre": "Buzo Rosa",
+      "categorias": "Buzos",
+      "precio": 13556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Buzo rosa 100% algodon",
+      "stock": 10,
+      "img": "../img/products/BuzoRosa.jpg"
+    },
+
+    {
+      "id": 5,
+      "nombre": "Buzo Violeta",
+      "categorias": "Buzos",
+      "precio": 12545.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Buzo Violeta 100% algodon",
+      "stock": 10,
+      "img": "../img/products/BuzoVioleta.jpg"
+    },
+
+    {
+      "id": 6,
+      "nombre": "Camisa",
+      "categorias": "Tops",
+      "precio": 12556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Camisa blanca oversize",
+      "stock": 10,
+      "img": "../img/products/Camisa.jpg"
+    },
+
+    {
+      "id": 7,
+      "nombre": "Campera de Jean",
+      "categorias": "Abrigos",
+      "precio": 125456.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Campera de jean crop",
+      "stock": 10,
+      "img": "../img/products/Campera.jpg"
+    },
+
+    {
+      "id": 8,
+      "nombre": "Campera Animal Print",
+      "categorias": "Abrigos",
+      "precio": 125556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Campera animal print de plush rosa",
+      "stock": 10,
+      "img": "../img/products/Campera2.jpg"
+    },
+
+    {
+      "id": 8,
+      "nombre": "Campera de Cuero",
+      "categorias": "Abrigos",
+      "precio": 135556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Campera de cuero crop",
+      "stock": 10,
+      "img": "../img/products/CamperaCuero.jpg"
+    },
+
+    {
+      "id": 9,
+      "nombre": "Camisa de Lino Lydia",
+      "categorias": ["Tops", "Conjuntos"],
+      "precio": 54556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Camisa de lino conjunto Lydia",
+      "stock": 10,
+      "img": "../img/products/Conjunto.jpg"
+    },
+
+    {
+      "id": 10,
+      "nombre": "Short de Lino Lydia",
+      "categorias": ["Shorts", "Conjuntos"],
+      "precio": 54556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Short de lino conjunto Lydia",
+      "stock": 10,
+      "img": "../img/products/Conjunto.jpg"
+    },
+
+    {
+      "id": 11,
+      "nombre": "Top de Lino Lydia",
+      "categorias": ["Tops", "Conjuntos"],
+      "precio": 22556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Top de lino conjunto Lydia",
+      "stock": 10,
+      "img": "../img/products/Conjunto.jpg"
+    },
+
+    {
+      "id": 12,
+      "nombre": "Top de Lino Alma",
+      "categorias": ["Tops", "Conjuntos"],
+      "precio": 54556.0,
+      "talle": ["S", "M", "L", "XL"],
+      "descripcion": "Top de lino conjunto Alma",
+      "stock": 10,
+      "img": "../img/products/Conjunto2.jpg"
+    },
+
+    {
+        "id": 13,
+        "nombre": "Pollera de Lino Alma",
+        "categorias": ["Polleras", "Conjuntos"],
+        "precio": 54556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Top de lino conjunto Alma",
+        "stock": 10,
+        "img": "../img/products/Conjunto2.jpg"
+    },
+    
+    {
+        "id": 14,
+        "nombre": "Jean Leila",
+        "categorias": "Denim",
+        "precio": 85556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Jean wide leg",
+        "stock": 10,
+        "img": "../img/products/Jean.jpeg"
+      },
+
+      {
+          "id": 15,
+          "nombre": "Jean Roma",
+          "categorias": "Denim",
+          "precio": 85556.0,
+          "talle": ["S", "M", "L", "XL"],
+          "descripcion": "Jean wide leg",
+          "stock": 10,
+          "img": "../img/products/Jean1.jpg"
+        },
+        
+      {
+        "id": 16,
+        "nombre": "Jean Denisse",
+        "categorias": "Denim",
+        "precio": 85556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Jean recto",
+        "stock": 10,
+        "img": "../img/products/Jean2.jpeg"
+      },
+      
+      {
+        "id": 17,
+        "nombre": "Jean Venecia",
+        "categorias": "Denim",
+        "precio": 85556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Jean recto",
+        "stock": 10,
+        "img": "../img/products/Jean3.jpeg"
+      },
+      {
+        "id": 18,
+        "nombre": "Jean Aura",
+        "categorias": "Denim",
+        "precio": 85556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Jean mom",
+        "stock": 10,
+        "img": "../img/products/Jean4.jpg"
+      },
+      {
+        "id": 19,
+        "nombre": "Blusa Hanna",
+        "categorias": "Tops",
+        "precio": 42556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Blusa crema",
+        "stock": 10,
+        "img": "../img/products/Musculosa.jpeg"
+      },
+      {
+        "id": 20,
+        "nombre": "Musculosa crop",
+        "categorias": "Tops",
+        "precio": 12556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Musculosa blanca crop 100% algodon",
+        "stock": 10,
+        "img": "../img/products/Musculosa2.jpg"
+      },
+      {
+        "id": 21,
+        "nombre": "Musculosa",
+        "categorias": "Tops",
+        "precio": 12556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Musculosa blanca 100% algodon",
+        "stock": 10,
+        "img": "../img/products/Musculosa3.jpg"
+      },
+      
+      {
+        "id": 22,
+        "nombre": "Musculosa Lino",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Musculosa lino",
+        "stock": 10,
+        "img": "../img/products/MusculosaLino.jpg"
+      },
+      {
+        "id": 23,
+        "nombre": "Pantalon Cargo",
+        "categorias": "Pantalon",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Pantalón cargo beige",
+        "stock": 10,
+        "img": "../img/products/PantalonCargo1.webp"
+      },
+      
+      {
+        "id": 24,
+        "nombre": "Pantalon Cargo Blanco",
+        "categorias": "Pantalon",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Pantalón cargo beige",
+        "stock": 10,
+        "img": "../img/products/PantalonCargo2.jpg"
+      },
+      
+      {
+        "id": 25,
+        "nombre": "Pantalon Blanco",
+        "categorias": "Pantalon",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Pantalón cargo beige",
+        "stock": 10,
+        "img": "../img/products/Pantalon.jpeg"
+      },
+      {
+        "id": 26,
+        "nombre": "Polera",
+        "categorias": "Sweaters",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Polera de lana",
+        "stock": 10,
+        "img": "../img/products/Polera.jpg"
+      },
+      {
+        "id": 27,
+        "nombre": "Polera Verde",
+        "categorias": "Sweaters",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Polera de lana verde",
+        "stock": 10,
+        "img": "../img/products/Polera2.jpg"
+      },
+      {
+        "id": 28,
+        "nombre": "Pollera de Jean",
+        "categorias": "Polleras",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Pollera de Jean",
+        "stock": 10,
+        "img": "../img/products/Pollera.jpg"
+      },
+      {
+        "id": 29,
+        "nombre": "Pollera Negra",
+        "categorias": "Polleras",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Pollera tableada negra",
+        "stock": 10,
+        "img": "../img/products/Pollera2.jpg"
+      },
+      {
+        "id": 30,
+        "nombre": "Pollera Blanca",
+        "categorias": "Polleras",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Pollera tableada blanca",
+        "stock": 10,
+        "img": "../img/products/Pollera3.jpg"
+      },
+      {
+        "id": 31,
+        "nombre": "Remera Emily",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón estampada",
+        "stock": 10,
+        "img": "../img/products/Remera1.jpeg"
+      },
+      {
+        "id": 32,
+        "nombre": "Remera Ailen",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón estampada",
+        "stock": 10,
+        "img": "../img/products/Remera2.jpeg"
+      },
+      {
+        "id": 33,
+        "nombre": "Remera Paris",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón estampada",
+        "stock": 10,
+        "img": "../img/products/Remera3.jpeg"
+      },
+      {
+        "id": 34,
+        "nombre": "Remera NY",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón",
+        "stock": 10,
+        "img": "../img/products/Remera4.jpg"
+      },
+      {
+        "id": 35,
+        "nombre": "Remera Buenos Aires",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón estampada negra",
+        "stock": 10,
+        "img": "../img/products/Remera5.jpg"
+      },
+      {
+        "id": 36,
+        "nombre": "Remera Madrid",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón estampada negra",
+        "stock": 10,
+        "img": "../img/products/Remera6.jpg"
+      },
+      {
+        "id": 37,
+        "nombre": "Remera Marsella",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Remera 100% algodón estampada Beige",
+        "stock": 10,
+        "img": "../img/products/Remera7.png"
+      },
+      {
+        "id": 38,
+        "nombre": "Saco",
+        "categorias": "Abrigos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Saco lana",
+        "stock": 10,
+        "img": "../img/products/Saco.jpg"
+      },
+      {
+        "id": 39,
+        "nombre": "Saco Calado",
+        "categorias": "Abrigos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Saco calado",
+        "stock": 10,
+        "img": "../img/products/Saco2.jpg"
+      },
+      {
+        "id": 40,
+        "nombre": "Short de Jean",
+        "categorias": ["Shorts", "Denim"],
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Short de Jean",
+        "stock": 10,
+        "img": "../img/products/Short.jpg"
+      },
+      {
+        "id": 41,
+        "nombre": "Short de Jean",
+        "categorias": ["Shorts", "Denim"],
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Short de Jean",
+        "stock": 10,
+        "img": "../img/products/Short2.jpg"
+      },
+      {
+        "id": 42,
+        "nombre": "Short de Jean",
+        "categorias": ["Shorts", "Denim"],
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Short de Jean",
+        "stock": 10,
+        "img": "../img/products/Short3.png"
+      },
+      {
+        "id": 43,
+        "nombre": "Short Verde",
+        "categorias": "Shorts",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Short Verde",
+        "stock": 10,
+        "img": "../img/products/ShortVerde.jpg"
+      },
+      {
+        "id": 44,
+        "nombre": "Sweater Gris",
+        "categorias": "Sweaters",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Sweater lana",
+        "stock": 10,
+        "img": "../img/products/Sweater2.webp"
+      },
+      {
+        "id": 45,
+        "nombre": "Sweater Amarillo",
+        "categorias": "Sweaters",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Sweater lana",
+        "stock": 10,
+        "img": "../img/products/Sweater.jpg"
+      },
+      {
+        "id": 46,
+        "nombre": "Sweater Gris",
+        "categorias": "Sweaters",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Sweater lana",
+        "stock": 10,
+        "img": "../img/products/Sweater2.webp"
+      },
+      {
+        "id": 47,
+        "nombre": "Tapado",
+        "categorias": "Abrigos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Tapado Blanco",
+        "stock": 10,
+        "img": "../img/products/Tapado.jpg"
+      },
+      {
+        "id": 48,
+        "nombre": "Tapado de Cuero",
+        "categorias": "Abrigos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Tapado de cuero",
+        "stock": 10,
+        "img": "../img/products/TapadoCuero.jpg"
+      },
+      {
+        "id": 49,
+        "nombre": "Top London",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Top de hilo",
+        "stock": 10,
+        "img": "../img/products/Top.jpg"
+      },
+      {
+        "id": 50,
+        "nombre": "Top Milan",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Top",
+        "stock": 10,
+        "img": "../img/products/Top2.jpg"
+      },
+      
+      {
+        "id": 51,
+        "nombre": "Top Amsterdam",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Top",
+        "stock": 10,
+        "img": "../img/products/Top3.jpg"
+      },
+      {
+        "id": 52,
+        "nombre": "Top Bombay",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Top",
+        "stock": 10,
+        "img": "../img/products/Top4.jpg"
+      },
+      {
+        "id": 53,
+        "nombre": "Top Alabama",
+        "categorias": "Tops",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Top",
+        "stock": 10,
+        "img": "../img/products/Top5.jpg"
+      },
+      {
+        "id": 54,
+        "nombre": "Vestido Cartagena",
+        "categorias": "Vestidos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Vestido",
+        "stock": 10,
+        "img": "../img/products/Vestido.jpg"
+      },
+      {
+        "id": 55,
+        "nombre": "Vestido Berlin",
+        "categorias": "Vestidos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Vestidos",
+        "stock": 10,
+        "img": "../img/products/Vestido2.jpg"
+      },
+      {
+        "id": 56,
+        "nombre": "Vestido Lisboa",
+        "categorias": "Vestidos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Vestidos",
+        "stock": 10,
+        "img": "../img/products/VestidoFloreado.jpg"
+      },
+      {
+        "id": 57,
+        "nombre": "Vestido Tokio",
+        "categorias": "Vestidos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Vestidos",
+        "stock": 10,
+        "img": "../img/products/VestidoRosa.jpg"
+      },
+      {
+        "id": 58,
+        "nombre": "Sweater Calado",
+        "categorias": "Sweaters",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Sweater Calado",
+        "stock": 10,
+        "img": "../img/products/Sweater3.jpg"
+      },
+      {
+        "id": 59,
+        "nombre": "Campera de Jean Negra",
+        "categorias": "Abrigos",
+        "precio": 32556.0,
+        "talle": ["S", "M", "L", "XL"],
+        "descripcion": "Vestidos",
+        "stock": 10,
+        "img": "../img/products/CamperaNegra.jpg"
+      }
+  ]
+}

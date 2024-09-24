@@ -1,24 +1,29 @@
 export function crearHeader(){
     let header = `
                     <div class="logo"> 
-                        <h1> Urbaner </h1> 
+                        <img src="../img/iconos/LOGO-01.png" class="logo-img" alt="Tienda Urbana">
                     </div>
                     <nav>
                         <ul>
                         <li>
-                            <a href="./index.html"> INICIO </a>
+                            <a href="../html/index.html"> INICIO </a>
                         </li>
+                        
                         <li>
-                            <a href="./login.html"> INICIAR SESION </a>
-                        </li>
-                        <li>
-                            <a href="./cart.html"> CARRITO </a>
+                            <a href="../html/products.html"> PRODUCTOS </a>
                         </li>
                         
                         </ul>
                     </nav>
-                    <div class = "usuario">
-                        <h1> Usuario</h1>
+                    <div class = "left">
+                        <a href="./cart.html"> <i class="fas fa-shopping-cart cart-icon"></i> </a>
+                        <div class="dropdown">
+                            <i class="fas fa-user user-icon" onclick="toggleDropdown()"></i>
+                            <div class="dropdown-content"  id="userDropdown">
+                                <a href="./login.html"> Iniciar Sesión</a>
+                                <a href="./register.html"> Registrarse </a>
+                            </div>
+                        </div>
                     </div>
                     `;
     return header;
@@ -28,5 +33,22 @@ export function renderizarHeader(){
     const headerContainer =document.querySelector("header");
     const header= crearHeader();
     headerContainer.innerHTML= header;
+
+    const userIcon= document.querySelector('.user-icon');
+    const dropdown= document.getElementById('userDropdown');
+
+    userIcon.addEventListener('click', function(){
+        dropdown.classList.toggle('show');
+    });
+
+    window.addEventListener('click', function(event){
+        if(!event.target.matches('.user-icon')){
+            if(dropdown.classList.contains('show')){
+                dropdown.classList.remove('show');
+            }
+        }
+    });
+
+
 }
 

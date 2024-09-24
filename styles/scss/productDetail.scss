@@ -1,0 +1,121 @@
+@use './components/footer';
+@use './components/header';
+
+@use './base/base.scss';
+@use './components/carrusel';
+@import './abstract/variables';
+@import './abstract/mixins';
+
+.container-section1{
+  padding-top: 40px;
+  min-height: 100vh;
+ 
+
+}
+.producto-detalle {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  .producto-imagen {
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .producto-info {
+   padding-top: 40px;
+  
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .descripcion {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .precio {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .talles {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+
+  }
+
+  button{
+    background-color: black;
+    color:white;
+    padding: 15px;
+    border-radius: 30px;
+    border:none;
+    cursor:pointer;
+    &:hover{
+      background-color: lighten(black,30%);
+    }
+  }
+}
+h2{
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+.productos-relacionados{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  width: 100%;
+  .card{
+    border-radius: 5px;
+    height: auto;
+    width: 200px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    .img-container{
+      width: 200px;
+      height: 200px;
+      overflow:hidden;
+      border-radius: 5px;
+      img{
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        border-radius: 5px;
+        display: block;
+        
+
+        &:hover  {
+          transform: scale(1.2);
+        }
+      }
+      
+    }
+    &:hover{
+      background-color: rgb(233, 233, 233);
+    }
+    .text-container{
+      text-align: center;
+      color:black;
+    }
+  }
+}

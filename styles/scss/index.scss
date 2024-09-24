@@ -1,8 +1,43 @@
 @use './components/footer';
 @use './components/header';
-@use './components/product';
-@use './base/base.scss';
 
+@use './base/base.scss';
+@use './components/carrusel';
 @import './abstract/variables';
 @import './abstract/mixins';
 
+.container-section2{
+    background-color: $black;
+    color:white;
+    display: flex;
+    width: 100%;
+    .img-container{
+        width: 60%;
+        height:95vh;
+        .img-item{
+            height: calc(95vh/3);
+            width: 100%;
+            img {
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+             } 
+            }
+    }
+    .text-container{
+        height: 95vh;
+        width:80%;
+        .text{
+            height: calc(95vh/3);
+            display: flex;
+            flex-direction: column; // Ensures child elements are arranged in a column
+            align-items: center;    // Centers children horizontally within the container
+            justify-content: center;
+            padding: 0 20px;
+            font-size: 15pt;
+            &:hover{
+                background-color: lighten($black,10%);
+            }
+        }
+    }
+}

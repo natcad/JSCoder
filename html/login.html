@@ -4,14 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesion</title>
+    <link rel="icon" href="../img/iconos/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../styles/css/login.css">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet">
 </head>
 <body>
     <header> </header>
     <div class="container">
+        <form id="loginForm">
+            <h2>Inicar Sesión</h2>
+
+            <div class="input">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" placeholder="Ingrese su nombre de usuario"> 
+            </div>
+
+            <div class="input"></div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña"> 
+            </div>
+
+            <div class="error-msg" id="errorMsg"></div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
     </div>
 
-    <div class="footer"></div>
+    <footer></footer>
 
     <script type="module" src="../js/login.js"></script>
 

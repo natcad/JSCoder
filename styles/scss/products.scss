@@ -1,0 +1,67 @@
+@use "./components/footer";
+@use "./components/header";
+@use "./components/cardProduct";
+@use "./base/base.scss";
+
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+.container {
+  width: 100%;
+  .banner-container {
+    width: 100%;
+    img {
+      margin-top: 60px;
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .categorias-container {
+      display: flex;
+      gap: 15px;
+      padding: 10px 0;
+      justify-content: center; // Centra las categorías en la pantalla
+     
+
+      .categoria-item {
+        a {
+          text-decoration: none;
+          color: #333; // Color de texto inicial
+          font-size: 18px; // Tamaño de fuente cómodo
+          font-weight: 600;
+          padding: 10px 20px; // Espaciado interno para hacer clic fácilmente
+          border-radius: 25px; // Botones redondeados
+          background-color: #fff; // Fondo blanco para contraste
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Sombra suave para elevar los elementos
+          transition: all 0.3s ease;
+
+          &:hover {
+            background-color: #e0e0e0; // Efecto hover con color de fondo más oscuro
+            color: #000; // Texto más oscuro en hover
+            transform: scale(1.05); // Efecto de agrandamiento suave en hover
+          }
+
+          &:active {
+            transform: scale(0.95); // Efecto de reducción rápida al hacer clic
+          }
+        }
+      }
+    }
+  }
+  .productos-container {
+    padding: 20px 60px;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
