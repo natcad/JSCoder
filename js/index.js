@@ -61,7 +61,7 @@ function crearCarrusel(section, imagenes, overlay,itemsVisible) {
     item.appendChild(img);
     carruselInner.appendChild(item);
   });
-
+  //logica del carrusel
   carruselContainer.appendChild(carruselInner);
   let index = 0;
   setInterval(() => {

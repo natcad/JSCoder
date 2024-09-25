@@ -5,17 +5,13 @@ let validCoupons = {
   "DESCUENTO10": 0.1,
   "DESCUENTO20": 0.2,
 };
-
+//renderiza el total de la compra
 function renderizarTotal() {
- 
-
   const totalContainer = document.createElement('div')
   totalContainer.classList.add("total-container");
 
   const container= document.querySelector('.container')
   let subtotal = 0;
-
-
 
   cart.forEach((elem) => {
     subtotal += elem.product.precio*elem.quantity;
@@ -54,6 +50,7 @@ function renderizarTotal() {
   document.getElementById('buy-btn').addEventListener('click', function(){mostrarMsjGracias();});
 }
 function mostrarMsjGracias(){
+  //utiliza la libreria sweet alert para agradecer la compra
   Swal.fire({
     icon:'success',
     title:'¡Gracias por tu compra!',
@@ -63,6 +60,8 @@ function mostrarMsjGracias(){
     timerProgressBar:true
   });
 }
+
+//Aplica cupon
 function aplicarCupon(subtotal) {
   const couponCode = document.getElementById("coupon-code").value.trim().toUpperCase();
   const couponMessage = document.getElementById("coupon-message");
@@ -74,7 +73,7 @@ function aplicarCupon(subtotal) {
     const discount = validCoupons[couponCode];
     const descuento = subtotal * discount;
     const totalConDescuento = subtotal - descuento;
-
+    //muestra el descuento en el total solo si el cupon es valido
     discountContainer.style.display = "block";
     discountAmountElem.textContent = `-$${descuento.toFixed(2)}`;
     totalAmountElem.textContent = `$${totalConDescuento.toFixed(2)}`;
@@ -84,13 +83,13 @@ function aplicarCupon(subtotal) {
   } else {
     couponMessage.textContent = "Cupón inválido";
     couponMessage.style.color = "red";
-
+//no lo muestra si no se hace el decuento
     discountContainer.style.display = "none";
     discountAmountElem.textContent = `$0.00`;
     totalAmountElem.textContent = `$${subtotal.toFixed(2)}`;
   }
 }
-
+//renderiza el carrito
 function renderizarCarrito() {
   const cartContainer = document.querySelector(".cart-container");
   cartContainer.innerHTML = "";
@@ -119,39 +118,40 @@ function renderizarCarrito() {
 
     const btnContainer= document.querySelector('.container-btn');
     btnContainer.innerHTML='<button class="removeAll">Quitar todo del carrito</button>'
-    const removeButtons = document.querySelectorAll(".remove");
+    document.querySelector(".removeAll").addEventListener("click", elimarCarrito);
+    
+    const removeButtons = document.querySelectorAll(".remove");    
     removeButtons.forEach((button) => {
       button.addEventListener("click", eliminarDelCarrito);
     });
 
-    
-    document.querySelector(".removeAll").addEventListener("click", elimarCarrito);
-    
     renderizarTotal();
   }
 }
 
 function elimarCarrito() {
+  //elimina todo del carrito
   cart = [];
   localStorage.setItem("cart", JSON.stringify(cart));
   location.reload();
 }
 
 function eliminarDelCarrito(product) {
+  //elimina un producto especidico del carrto
   const productId = product.target.getAttribute("data-product-id");
-  console.log("Intentando eliminar producto con ID:", productId); // Añadir para depuración
-
   const productIndex = cart.findIndex(item => item.product.id == productId);
-  console.log("Índice del producto encontrado:", productIndex); // Añadir para depuración
-
+  //si encuentra el indice en el carrito 
   if (productIndex !== -1) {
+    //elimina el que coincide
     cart.splice(productIndex, 1);
     localStorage.setItem("cart", JSON.stringify(cart)); 
+    //si ya existia el total lo elimina para que renderice nuevamente
     if(document.querySelector('.total-container')){
       document.querySelector('.total-container').remove();
       }
     renderizarCarrito();
     if (cart.length==0){
+      //si queda vacio recarga la pagina
       location.reload();
     }
   }

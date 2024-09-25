@@ -1,14 +1,12 @@
-{
-    "users": [
-      {
-        "user": "usuario1",
-        "nombre": "María",
-        "password": "maria123"
-      },
-      {
-        "user": "usuario2",
-        "nombre": "Juan",
-        "password": "juan123"
-      }
-    ]
-}
+[
+  {
+    "user": "usuario1",
+    "nombre": "María",
+    "password": "1234"
+  },
+  {
+    "user": "usuario2",
+    "nombre": "Juan",
+    "password": "1234"
+  }
+]

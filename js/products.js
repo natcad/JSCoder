@@ -13,10 +13,11 @@ const categorias = [
   "Polleras",
   "Sweaters",
   "Buzos",
-  "Conjuntos",
-  "Blusas y Camisas",
+  "Conjuntos"
 ];
+
 let productosCargados = [];
+//funcion que va creando los divs para la barra de categorias 
 function crearCategoria(cat) {
   const catItem = document.createElement("div");
   catItem.classList.add("categoria-item");
@@ -24,6 +25,7 @@ function crearCategoria(cat) {
   catItem.innerHTML = `<div class="categoria-item"> 
     <p> <a href="#" class="categoria-link"> ${cat} </a></p>                              
     </div>`;
+    //a cada link de categotia se le agrega el evento filtrar productos x categoria
     catItem.querySelector('.categoria-link').addEventListener('click', (event) => {
       event.preventDefault(); 
       filtrarProductos(cat);
@@ -32,7 +34,7 @@ function crearCategoria(cat) {
   return catItem;
 }
 
-
+//funcion que crea un div producto con su info pasado por parametro
 function crearProducto(producto) {
   const productItem = document.createElement("div");
   productItem.classList.add("producto-item");
@@ -49,25 +51,30 @@ function crearProducto(producto) {
         
         
     `;
+  //la funcion addtocartbutton crea el boton comprar y guarda el id del producto para saber a quien pertenece    
   const addToCartButton = AddToCartButton(producto);
   productItem.appendChild(addToCartButton);
 
   return productItem;
 }
+//funcion que renderiza los productos
 function renderizarProductos(productos, productosContainer) {
   productosContainer.innerHTML = "";
   productos.forEach((producto) => {
     productosContainer.appendChild(crearProducto(producto));
   });
 }
+
+//funcion que filtra x categoria
 function filtrarProductos(categoria) {
+  //filtra en productos cargados aquellos que incluyen la categoria y los renderiza
   const productosFiltrados = productosCargados.filter(producto => 
     producto.categorias.includes(categoria) 
   );
   const productosContainer = document.querySelector(".productos-container");
   renderizarProductos(productosFiltrados, productosContainer); 
 }
-
+//trae los productos del archivo jsom
 function cargarProductos(productosContainer) {
   fetch("../JSON/products.json")
     .then((response) => {

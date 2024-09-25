@@ -4,7 +4,7 @@ import { AddToCartButton } from "./components/addToCart.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   renderizarHeader();
-  renderizarFooter(); // Si quieres renderizar el footer también, descomenta esta línea.
+  
 
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get("id");
@@ -45,8 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch((error) => {
       console.error("Error:", error);
     });
-});
 
+    renderizarFooter(); 
+});
+//esta funcion renderiza 3 productos relacionados al producto que esta en detalle
 function renderizarProductosRelacionados(product, productos) {
   const productosRelacionados = productos
     .filter((p) => p.categorias === product.categorias && p.id != product.id)

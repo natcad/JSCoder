@@ -21,7 +21,6 @@ export function crearHeader(){
                             <i class="fas fa-user user-icon" onclick="toggleDropdown()"></i>
                             <div class="dropdown-content"  id="userDropdown">
                                 <a href="./login.html"> Iniciar Sesión</a>
-                                <a href="./register.html"> Registrarse </a>
                             </div>
                         </div>
                     </div>
