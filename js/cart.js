@@ -5,6 +5,7 @@ let validCoupons = {
   "DESCUENTO10": 0.1,
   "DESCUENTO20": 0.2,
 };
+
 //renderiza el total de la compra
 function renderizarTotal() {
   const totalContainer = document.createElement('div')
