@@ -2,36 +2,20 @@ import { renderizarHeader } from "../js/components/header.js";
 
 import { renderizarFooter } from "./components/footer.js";
 
-const summer = [
-  "../img/carrusel/playa.jpg",
-  "../img/carrusel/playa1.jpg",
-  "../img/carrusel/playa2.jpg",
-  "../img/carrusel/playa3.jpg",
-  "../img/carrusel/playa4.jpg",
-  "../img/carrusel/playa5.jpg",
-  "../img/carrusel/playa6.jpg",
-  "../img/carrusel/playa7.jpg",
-  "../img/carrusel/playa8.jpg",
-  "../img/carrusel/playa9.jpg",
-  "../img/carrusel/playa10.jpg",
-];
-const marca = [
-  "../img/carrusel/carrusel1.jpg",
-  "../img/carrusel/carrusel2.jpg",
-  "../img/carrusel/carrusel3.jpg",
-  "../img/carrusel/carrusel4.jpg",
-  "../img/carrusel/carrusel5.jpg",
-  "../img/carrusel/carrusel6.jpg",
-  "../img/carrusel/carrusel7.jpg",
-  "../img/carrusel/carrusel8.jpg",
-  "../img/carrusel/carrusel9.jpg",
-];
 
-const aboutUs = [
-  "../img/carrusel/closeUp.jpg",
-  "../img/carrusel/closeUp2.jpg",
-  "../img/carrusel/closeUp3.jpg",
-];
+async function cargarDatos() {
+  try{
+    const respone = await fetch('../JSON/home.json');
+    if(!respone.ok){
+      throw new Error('Error al carga los datos');
+    }
+    const datos = await respone.json();
+    return datos;
+  }catch (error){
+    console.error('Error:', error);
+    return null;
+  }
+}
 //crea carruseles, los parametros son la clase de la seccion donde crearlo, el array de img, y si va a tener overlay o no (Bool)
 function crearCarrusel(section, imagenes, overlay,itemsVisible) {
   // Selecciona el container del index
@@ -150,12 +134,16 @@ function crearAboutUs(aboutUs) {
   pageContainer.appendChild(textContainer);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  const datos =await cargarDatos();
   renderizarHeader();
-  const section1 = ".container-section1";
-  crearCarrusel(section1, summer, true,2);
-  crearAboutUs(aboutUs);
-  const section3='.container-section3';
-  crearCarrusel(section3,marca,false,4);
+  if(datos){
+    const section1 = ".container-section1";
+    crearCarrusel(section1, datos.summer, true,2);
+    crearAboutUs(datos.aboutUs);
+    const section3='.container-section3';
+    crearCarrusel(section3,datos.marca,false,4);
+  }
+  
   renderizarFooter();
 });

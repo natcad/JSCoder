@@ -620,5 +620,17 @@
         "stock": 10,
         "img": "../img/products/CamperaNegra.jpg"
       }
+  ],
+  "categorias":[
+    "Tops",
+    "Pantalon",
+    "Abrigos",
+    "Vestidos",
+    "Shorts",
+    "Denim",
+    "Polleras",
+    "Sweaters",
+    "Buzos",
+    "Conjuntos"
   ]
 }

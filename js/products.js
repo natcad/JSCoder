@@ -3,20 +3,9 @@ import { AddToCartButton } from "./components/addToCart.js";
 
 import { renderizarFooter } from "./components/footer.js";
 
-const categorias = [
-  "Tops",
-  "Pantalon",
-  "Abrigos",
-  "Vestidos",
-  "Shorts",
-  "Denim",
-  "Polleras",
-  "Sweaters",
-  "Buzos",
-  "Conjuntos"
-];
 
 let productosCargados = [];
+let categoriasCargadas = [];
 //funcion que va creando los divs para la barra de categorias 
 function crearCategoria(cat) {
   const catItem = document.createElement("div");
@@ -74,8 +63,14 @@ function filtrarProductos(categoria) {
   const productosContainer = document.querySelector(".productos-container");
   renderizarProductos(productosFiltrados, productosContainer); 
 }
+
+function renderizarCategorias(categoriasCargadas,categoriaContainer){
+  categoriasCargadas.forEach((cat)=>{
+    categoriaContainer.appendChild(crearCategoria(cat));
+  })
+}
 //trae los productos del archivo jsom
-function cargarProductos(productosContainer) {
+function cargarDatos(productosContainer, categoriaContainer) {
   fetch("../JSON/products.json")
     .then((response) => {
       if (!response.ok) {
@@ -85,6 +80,8 @@ function cargarProductos(productosContainer) {
     })
     .then((data) => {
       productosCargados=data.productos;
+      categoriasCargadas=data.categorias;
+      renderizarCategorias(categoriasCargadas,categoriaContainer);
       renderizarProductos(productosCargados, productosContainer);
     })
     .catch((error) => {
@@ -108,16 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const section2 = document.querySelector(".section2");
   const categoriaContainer = document.createElement("div");
   categoriaContainer.classList.add("categorias-container");
-  categorias.forEach((cat) => {
-    categoriaContainer.appendChild(crearCategoria(cat));
-  });
-  section2.appendChild(categoriaContainer);
-
+  
   //productos
   const productosContainer = document.createElement("div");
   productosContainer.classList.add("productos-container");
-  cargarProductos(productosContainer);
+  cargarDatos(productosContainer,categoriaContainer);
 
+  section2.appendChild(categoriaContainer);
   section2.appendChild(productosContainer);
 
   renderizarFooter();

@@ -1,0 +1,32 @@
+{
+  "summer": [
+    "../img/carrusel/playa.jpg",
+    "../img/carrusel/playa1.jpg",
+    "../img/carrusel/playa2.jpg",
+    "../img/carrusel/playa3.jpg",
+    "../img/carrusel/playa4.jpg",
+    "../img/carrusel/playa5.jpg",
+    "../img/carrusel/playa6.jpg",
+    "../img/carrusel/playa7.jpg",
+    "../img/carrusel/playa8.jpg",
+    "../img/carrusel/playa9.jpg",
+    "../img/carrusel/playa10.jpg"
+  ],
+"marca":[
+    "../img/carrusel/carrusel1.jpg",
+  "../img/carrusel/carrusel2.jpg",
+  "../img/carrusel/carrusel3.jpg",
+  "../img/carrusel/carrusel4.jpg",
+  "../img/carrusel/carrusel5.jpg",
+  "../img/carrusel/carrusel6.jpg",
+  "../img/carrusel/carrusel7.jpg",
+  "../img/carrusel/carrusel8.jpg",
+  "../img/carrusel/carrusel9.jpg"
+],
+"aboutUs":[
+  "../img/carrusel/closeUp.jpg",
+  "../img/carrusel/closeUp2.jpg",
+  "../img/carrusel/closeUp3.jpg"
+]
+
+}
